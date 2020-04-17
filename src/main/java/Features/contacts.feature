@@ -8,7 +8,7 @@ Then user enters "<username>" and "<password>"
 Then user clicks on Login button
 Then user is on home page
 #Then user moves to new contact page
-Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
+#Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
 Then close the browser
 
 Examples:

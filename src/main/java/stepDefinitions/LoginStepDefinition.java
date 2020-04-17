@@ -61,7 +61,7 @@ public class LoginStepDefinition {
 		Assert.assertEquals("CRMPRO - CRM software for customer relationship management, sales, and support.", title);
 	}
 
-	/*@Then("^user moves to new contact page$")
+	@Then("^user moves to new contact page$")
 	public void user_moves_to_new_contact_page() {
 
 		driver.switchTo().frame("mainpanel");
@@ -69,10 +69,9 @@ public class LoginStepDefinition {
 		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'CONTACTS')]"))).build().perform();
 		driver.findElement(By.xpath("//a[contains(text(),'New Contact')]")).click();
 
+	}
 
-	}*/
-
-/*	@Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$")
+	@Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$")
 	public void user_enters_contacts_details(String firstname, String lastname, String position) {
 
 		driver.findElement(By.id("first_name")).sendKeys(firstname);
@@ -80,7 +79,7 @@ public class LoginStepDefinition {
 		driver.findElement(By.id("company_position")).sendKeys(position);
 		driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click();
 
-	}*/
+	}
 
 	@Then("^close the browser$")
 	public void close_the_browser() {

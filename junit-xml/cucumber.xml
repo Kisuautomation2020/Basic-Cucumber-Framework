@@ -1,74 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="30.147787">
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario" time="13.54759">
-<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: #first_name&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{moz:profile=C:\Users\USER\AppData\Local\Temp\rust_mozprofile.Ey0I8mPpSQ46, rotatable=false, moz:geckodriverVersion=0.24.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=75.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=6004, browserName=firefox, moz:buildID=20200403170909, javascriptEnabled=true, platformName=XP, setWindowRect=true, moz:webdriverClick=true}]&#10;Session ID: 0c3b8dfa-cba5-40f1-b025-96936cf16591&#10;*** Element info: {Using=id, value=first_name}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:218)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_enters_contacts_details(LoginStepDefinition.java:78)&#13;&#10;&#9;at ✽.Then user enters contact details &quot;tonny&quot; and &quot;patel&quot; and &quot;Manager&quot;(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/contacts.feature:11)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="47.625325">
+<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario" time="27.884417">
+<system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of Login page is Free CRM........................................passed
 Then user enters "shwetap" and "shweta@123".................................passed
 Then user clicks on Login button............................................passed
 Then user is on home page...................................................passed
-Then user enters contact details "tonny" and "patel" and "Manager"..........failed
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: #first_name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\USER\AppData\Local\Temp\rust_mozprofile.Ey0I8mPpSQ46, rotatable=false, moz:geckodriverVersion=0.24.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=75.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=6004, browserName=firefox, moz:buildID=20200403170909, javascriptEnabled=true, platformName=XP, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 0c3b8dfa-cba5-40f1-b025-96936cf16591
-*** Element info: {Using=id, value=first_name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at stepDefinitions.LoginStepDefinition.user_enters_contacts_details(LoginStepDefinition.java:78)
-	at ✽.Then user enters contact details "tonny" and "patel" and "Manager"(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/contacts.feature:11)
-]]></failure>
+Then close the browser......................................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario 2" time="16.600197">
-<failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: #first_name&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities [{moz:profile=C:\Users\USER\AppData\Local\Temp\rust_mozprofile.aLT5QuBENIir, rotatable=false, moz:geckodriverVersion=0.24.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=75.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=15112, browserName=firefox, moz:buildID=20200403170909, javascriptEnabled=true, platformName=XP, setWindowRect=true, moz:webdriverClick=true}]&#10;Session ID: 6026c6bc-2248-421a-b231-a455b3f969d6&#10;*** Element info: {Using=id, value=first_name}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)&#13;&#10;&#9;at org.openqa.selenium.By$ById.findElement(By.java:218)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)&#13;&#10;&#9;at stepDefinitions.LoginStepDefinition.user_enters_contacts_details(LoginStepDefinition.java:78)&#13;&#10;&#9;at ✽.Then user enters contact details &quot;David&quot; and &quot;Dsoza&quot; and &quot;Director&quot;(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/contacts.feature:11)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................passed
+<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario 2" time="19.740908">
+<system-out><![CDATA[Given user is already on Login Page.........................................passed
 When title of Login page is Free CRM........................................passed
 Then user enters "shwetap" and "shweta@123".................................passed
 Then user clicks on Login button............................................passed
 Then user is on home page...................................................passed
-Then user enters contact details "David" and "Dsoza" and "Director".........failed
-Then close the browser......................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: #first_name
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{moz:profile=C:\Users\USER\AppData\Local\Temp\rust_mozprofile.aLT5QuBENIir, rotatable=false, moz:geckodriverVersion=0.24.0, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, moz:headless=false, platform=XP, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=75.0, moz:shutdownTimeout=60000, platformVersion=10.0, moz:processID=15112, browserName=firefox, moz:buildID=20200403170909, javascriptEnabled=true, platformName=XP, setWindowRect=true, moz:webdriverClick=true}]
-Session ID: 6026c6bc-2248-421a-b231-a455b3f969d6
-*** Element info: {Using=id, value=first_name}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:462)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at stepDefinitions.LoginStepDefinition.user_enters_contacts_details(LoginStepDefinition.java:78)
-	at ✽.Then user enters contact details "David" and "Dsoza" and "Director"(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/contacts.feature:11)
-]]></failure>
+Then close the browser......................................................passed
+]]></system-out>
 </testcase>
 </testsuite>
