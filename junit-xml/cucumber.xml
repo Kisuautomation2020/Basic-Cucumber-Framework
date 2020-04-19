@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="47.625325">
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario" time="27.884417">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="15.546342">
+<testcase classname="Deal data creation" name="Free CRM Create a new deal scenario" time="15.546342">
+<failure message="org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)&#13;&#10;&#9;at stepDefinitions.DealStepDefinition.user_moves_to_new_contact_page(DealStepDefinition.java:64)&#13;&#10;&#9;at ✽.Then user moves to new deal page(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/deals.feature:11)&#13;&#10;"><![CDATA[Given user is already on Login Page.........................................passed
 When title of Login page is Free CRM........................................passed
-Then user enters "shwetap" and "shweta@123".................................passed
+Then user enters username and password......................................passed
 Then user clicks on Login button............................................passed
 Then user is on home page...................................................passed
-Then close the browser......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM Create Contacts" name="Free CRM Create a new contact scenario 2" time="19.740908">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of Login page is Free CRM........................................passed
-Then user enters "shwetap" and "shweta@123".................................passed
-Then user clicks on Login button............................................passed
-Then user is on home page...................................................passed
-Then close the browser......................................................passed
-]]></system-out>
+Then user moves to new deal page............................................failed
+Then user enters deal details...............................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'SHWETA', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)
+	at stepDefinitions.DealStepDefinition.user_moves_to_new_contact_page(DealStepDefinition.java:64)
+	at ✽.Then user moves to new deal page(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/deals.feature:11)
+]]></failure>
 </testcase>
 </testsuite>

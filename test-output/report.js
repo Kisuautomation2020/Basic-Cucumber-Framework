@@ -1,18 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/contacts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/deals.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Create Contacts",
+  "name": "Deal data creation",
   "description": "",
-  "id": "free-crm-create-contacts",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 3,
-  "name": "Free CRM Create a new contact scenario",
+  "name": "Free CRM Create a new deal scenario",
   "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 5,
@@ -26,282 +26,107 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 10,
-      "value": "#Then user moves to new contact page"
-    },
-    {
-      "line": 11,
-      "value": "#Then user enters contact details \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\""
-    }
-  ],
-  "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 14,
-  "name": "",
-  "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;",
+  "name": "user enters username and password",
   "rows": [
     {
       "cells": [
-        "username",
-        "password",
-        "firstname",
-        "lastname",
-        "position"
-      ],
-      "line": 15,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;1"
-    },
-    {
-      "cells": [
         "shwetap",
-        "shweta@123",
-        "tonny",
-        "patel",
-        "Manager"
+        "shweta@123"
       ],
-      "line": 16,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;2"
-    },
-    {
-      "cells": [
-        "shwetap",
-        "shweta@123",
-        "David",
-        "Dsoza",
-        "Director"
-      ],
-      "line": 17,
-      "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;3"
+      "line": 8
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 16,
-  "name": "Free CRM Create a new contact scenario",
-  "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "title of Login page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enters \"shwetap\" and \"shweta@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on Login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 10,
-      "value": "#Then user moves to new contact page"
-    },
-    {
-      "line": 11,
-      "value": "#Then user enters contact details \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\""
-    }
-  ],
-  "line": 12,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
-});
-formatter.result({
-  "duration": 14307311000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
-});
-formatter.result({
-  "duration": 11106900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "shwetap",
-      "offset": 13
-    },
-    {
-      "val": "shweta@123",
-      "offset": 27
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "duration": 158725100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 49558500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 6194100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 13351521700,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 17,
-  "name": "Free CRM Create a new contact scenario",
-  "description": "",
-  "id": "free-crm-create-contacts;free-crm-create-a-new-contact-scenario;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 6,
-  "name": "title of Login page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 7,
-  "name": "user enters \"shwetap\" and \"shweta@123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
   "name": "user clicks on Login button",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 10,
   "name": "user is on home page",
   "keyword": "Then "
 });
 formatter.step({
-  "comments": [
+  "line": 11,
+  "name": "user moves to new deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "user enters deal details",
+  "rows": [
     {
-      "line": 10,
-      "value": "#Then user moves to new contact page"
-    },
-    {
-      "line": 11,
-      "value": "#Then user enters contact details \"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\""
+      "cells": [
+        "test deal",
+        "1000",
+        "50",
+        "10"
+      ],
+      "line": 13
     }
   ],
-  "line": 12,
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_already_on_Login_Page()"
+  "location": "DealStepDefinition.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 10125582100,
+  "duration": 15222887100,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.title_of_login_page_is_free_CRM()"
+  "location": "DealStepDefinition.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 7372400,
+  "duration": 11764200,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "shwetap",
-      "offset": 13
-    },
-    {
-      "val": "shweta@123",
-      "offset": 27
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_username_and_password(String,String)"
+  "location": "DealStepDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 435210700,
+  "duration": 145534400,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealStepDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 57132200,
+  "duration": 131191000,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_on_home_page()"
+  "location": "DealStepDefinition.user_is_on_home_page()"
 });
 formatter.result({
-  "duration": 6534800,
+  "duration": 6497700,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
+  "location": "DealStepDefinition.user_moves_to_new_contact_page()"
 });
 formatter.result({
-  "duration": 9109076000,
-  "status": "passed"
+  "duration": 28467900,
+  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027SHWETA\u0027, ip: \u0027192.168.0.24\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\r\n\tat stepDefinitions.DealStepDefinition.user_moves_to_new_contact_page(DealStepDefinition.java:64)\r\n\tat ✽.Then user moves to new deal page(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/deals.feature:11)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "DealStepDefinition.user_enters_contacts_details(DataTable)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "DealStepDefinition.close_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });
