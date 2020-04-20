@@ -1,4 +1,4 @@
-/*package stepDefinitions;
+package stepDefinitions;
 
 import java.util.List;
 
@@ -85,4 +85,3 @@ public class DealStepDefinition {
 	}
 
 }
-*/
