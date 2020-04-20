@@ -78,12 +78,12 @@ public class DealsStepWithMapDefinition {
 		
 		// use map as object in for loop for enter the data from data table with it's header/titles
 		
-		for(Map <String, String> dealValues :dealData.asMaps(String.class, String.class)) { 
+		for(Map <String, String> data :dealData.asMaps(String.class, String.class)) { 
 			
-			driver.findElement(By.id("title")).sendKeys(dealValues.get("title"));
-			driver.findElement(By.id("amount")).sendKeys(dealValues.get("amount"));
-			driver.findElement(By.id("probability")).sendKeys(dealValues.get("probability"));
-			driver.findElement(By.id("commission")).sendKeys(dealValues.get("commission"));
+			driver.findElement(By.id("title")).sendKeys(data.get("title"));
+			driver.findElement(By.id("amount")).sendKeys(data.get("amount"));
+			driver.findElement(By.id("probability")).sendKeys(data.get("probability"));
+			driver.findElement(By.id("commission")).sendKeys(data.get("commission"));
 			
 			driver.findElement(By.xpath("//input[@type='submit' and @value='Save']")).click(); //save button
 			

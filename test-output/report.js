@@ -1,175 +1,67 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/dealsmap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/tagging.feature");
 formatter.feature({
-  "line": 1,
-  "name": "Deal data creation",
+  "line": 2,
+  "name": "Free CRM application testing",
   "description": "",
-  "id": "deal-data-creation",
-  "keyword": "Feature"
+  "id": "free-crm-application-testing",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    }
+  ]
 });
 formatter.scenario({
-  "line": 3,
-  "name": "Free CRM Create a new deal scenario",
+  "line": 65,
+  "name": "validate a report",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-a-new-deal-scenario",
+  "id": "free-crm-application-testing;validate-a-report",
   "type": "scenario",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 64,
+      "name": "@End2End"
+    }
+  ]
 });
 formatter.step({
-  "line": 5,
-  "name": "user is already on Login Page",
+  "line": 66,
+  "name": "This is a report test",
   "keyword": "Given "
 });
-formatter.step({
-  "line": 6,
-  "name": "title of Login page is Free CRM",
-  "keyword": "When "
+formatter.match({
+  "location": "TaggingStepDefinition.this_is_a_report_test()"
 });
-formatter.step({
-  "line": 7,
-  "name": "user enters username and password",
-  "rows": [
+formatter.result({
+  "duration": 204490300,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 69,
+  "name": "Application Logout",
+  "description": "",
+  "id": "free-crm-application-testing;application-logout",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 8
-    },
-    {
-      "cells": [
-        "shwetap",
-        "shweta@123"
-      ],
-      "line": 9
+      "line": 68,
+      "name": "@End2End"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
-  "line": 10,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user is on home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 12,
-  "name": "user moves to new deal page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "user enters deal details",
-  "rows": [
-    {
-      "cells": [
-        "title",
-        "amount",
-        "probability",
-        "commission"
-      ],
-      "line": 14
-    },
-    {
-      "cells": [
-        "test deal1",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 15
-    },
-    {
-      "cells": [
-        "test deal2",
-        "2000",
-        "60",
-        "20"
-      ],
-      "line": 16
-    },
-    {
-      "cells": [
-        "test deal3",
-        "3000",
-        "70",
-        "30"
-      ],
-      "line": 17
-    },
-    {
-      "cells": [
-        "test deal",
-        "1000",
-        "50",
-        "10"
-      ],
-      "line": 18
-    }
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "close the browser",
-  "keyword": "Then "
+  "line": 70,
+  "name": "This is a logout test",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_already_on_Login_Page()"
+  "location": "TaggingStepDefinition.this_is_a_logout_test()"
 });
 formatter.result({
-  "duration": 15254276600,
+  "duration": 45900,
   "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.title_of_login_page_is_free_CRM()"
-});
-formatter.result({
-  "duration": 15180600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_username_and_password(DataTable)"
-});
-formatter.result({
-  "duration": 158831500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 40972800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_is_on_home_page()"
-});
-formatter.result({
-  "duration": 9532400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_moves_to_new_contact_page()"
-});
-formatter.result({
-  "duration": 24391100,
-  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027SHWETA\u0027, ip: \u0027192.168.0.24\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:982)\r\n\tat stepDefinitions.DealsStepWithMapDefinition.user_moves_to_new_contact_page(DealsStepWithMapDefinition.java:68)\r\n\tat ✽.Then user moves to new deal page(C:/Selenium_Workspace/FreeCrmBDDFramework/src/main/java/Features/dealsmap.feature:12)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.user_enters_contacts_details(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "DealsStepWithMapDefinition.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
 });
 });
